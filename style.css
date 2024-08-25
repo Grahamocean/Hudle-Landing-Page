@@ -15,14 +15,19 @@
 
 header {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   /* padding: 3rem 2rem; */
   /* height: 100vh; */
   border: 2px solid blue;
   background-color: var(--very-pale-blue);
+  background-repeat: no-repeat;
   background-image: url(./huddle-landing-page-with-curved-sections-master/images/bg-section-top-desktop-2.svg);
 }
 
 nav {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,8 +60,12 @@ nav {
 }
 
 .build {
-  width: 100%;
-  padding: 5rem;
+  /* width: 50%; */
+  max-width: 700px;
+  /* width: 100%; */
+  /* padding: 5rem; */
+
+  padding: 2rem 0;
   border: 1px solid yellow;
   text-align: center;
 }
@@ -98,4 +107,33 @@ nav {
 .build-ilus img {
   width: 100%;
   height: 500px;
+  object-fit: contain;
+}
+
+.hero-stats {
+  border: 1px solid greenyellow;
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+}
+
+.stats {
+  padding: 1rem;
+  width: 200px;
+  border: 1px solid red;
+}
+
+.stats-text {
+  text-align: center;
+}
+
+.stats h2 {
+  font-size: 5rem;
+  color: var(--verydarkcyan);
+}
+
+.stats span {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--verydarkcyan);
 }
