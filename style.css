@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --Light-pink: hsl(321, 100%, 78%);
+  --Light-Red: hsl(0, 100%, 63%);
+  --verydarkcyan: hsl(192, 100%, 9%);
+  --very-pale-blue: hsl(207, 100%, 98%);
+}
+
+header {
+  padding: 3rem 2rem;
+  /* height: 100vh; */
+  border: 2px solid blue;
+  background-color: var(--very-pale-blue);
+  background-image: url(./huddle-landing-page-with-curved-sections-master/images/bg-section-top-desktop-2.svg);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid red;
+  padding: 1rem 2rem;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.btn {
+  background-color: transparent;
+  padding: 0.8rem 2rem;
+  border: 1px solid var(--pink);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--pink);
+}
+
+.hero-section {
+  padding: 3rem 0;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.build {
+  padding: 5rem;
+  border: 1px solid yellow;
+  text-align: center;
+}
+
+.build h1 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.build p {
+  font-weight: 500;
+  margin: 0 25rem;
+}
