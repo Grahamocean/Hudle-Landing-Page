@@ -83,15 +83,15 @@ nav {
   align-items: center;
 }
 
-@supports (-webkit-animation-timeline: view()) {
+@supports (animation-timeline: view()) {
   .build,
   .build-ilus,
   .stats,
   .services-image,
   .services-text {
-    animation: crossreveal linear both;
+    -webkit-animation: crossreveal linear both;
     /* animation-duration: 3ms; */
-    -webkit-animation-timeline: view();
+    animation-timeline: view();
     animation-range: entry 50% cover 50%;
   }
 }
