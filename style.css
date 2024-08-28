@@ -164,7 +164,6 @@ nav {
 .hero-stats {
   /* border: 1px solid greenyellow; */
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 700px;
@@ -173,6 +172,8 @@ nav {
 
 .stats {
   padding: 1rem;
+  /* max-width: 350px; */
+  /* border: 1px solid black; */
 }
 
 .stats-text {
@@ -280,13 +281,11 @@ nav {
 
 footer {
   border: 1px solid red;
-  /* position: relative; */
   width: 100%;
   height: 100%;
   padding: 2rem 3rem;
   background-image: url(./huddle-landing-page-with-curved-sections-master/images/bg-footer-top-desktop.svg);
   background-color: var(--verydarkcyan);
-  /* background-size: cover; */
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -344,6 +343,8 @@ footer {
   .hero-stats {
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+
     gap: 3rem;
   }
 
