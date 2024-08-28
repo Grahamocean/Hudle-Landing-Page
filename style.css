@@ -86,7 +86,8 @@ nav {
 .build,
 .build-ilus,
 .stats,
-.services {
+.services-image,
+.services-text {
   animation: crossreveal linear both;
   /* animation-duration: 3ms; */
   animation-timeline: view();
@@ -162,6 +163,7 @@ nav {
 .hero-stats {
   /* border: 1px solid greenyellow; */
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 700px;
