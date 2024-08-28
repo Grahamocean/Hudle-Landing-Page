@@ -83,7 +83,7 @@ nav {
   align-items: center;
 }
 
-@supports (animation-timeline: view()) {
+@supports (-webkit-animation-timeline: view()) {
   .build,
   .build-ilus,
   .stats,
