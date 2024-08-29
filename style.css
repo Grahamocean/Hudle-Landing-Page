@@ -83,29 +83,50 @@ nav {
   align-items: center;
 }
 
-@supports (animation-timeline: view()) {
-  .build,
-  .build-ilus,
-  .stats,
-  .services-image,
-  .services-text {
-    -webkit-animation: crossreveal linear both;
-    /* animation-duration: 3ms; */
-    animation-timeline: view();
-    animation-range: entry 50% cover 50%;
-  }
+.build,
+.build-ilus,
+.stats,
+.services-image,
+.services-text {
+  animation: crossreveal linear both;
+  /* animation-duration: 3ms; */
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
 }
+
 @keyframes crossreveal {
   from {
-    opacity: 0;
+    opacity: 0.4;
     transform: translateY(100px);
   }
 
   to {
     opacity: 1;
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
   }
 }
+
+/* .build,
+.build-ilus,
+.stats,
+.services-image,
+.services-text {
+  -webkit-animation: crossreveal linear both;
+  -webkit-animation-timeline: view();
+  -webkit-animation-range: entry 50% cover 50%;
+}
+
+@-webkit-keyframes crossreveal {
+  from {
+    opacity: 0.4;
+    -webkit-transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+} */
 
 .build {
   max-width: 700px;
@@ -283,11 +304,94 @@ footer {
   border: 1px solid red;
   width: 100%;
   height: 100%;
-  padding: 2rem 3rem;
+  padding: 2rem 5rem;
   background-image: url(./huddle-landing-page-with-curved-sections-master/images/bg-footer-top-desktop.svg);
   background-color: var(--verydarkcyan);
   background-repeat: no-repeat;
   background-position: top;
+}
+
+.footer-container {
+  color: #fff;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.footer-left,
+.footer-right {
+  width: 40%;
+  border: 1px solid white;
+}
+
+.footer-logo {
+  margin-bottom: 1rem;
+}
+
+.footer-logo img {
+  width: 200px;
+}
+
+.footer-left p {
+  /* width: 200px; */
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-info img {
+  width: 10px;
+  height: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.social-icons i {
+  font-size: 2rem;
+}
+
+.footer-right h5 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-right p {
+  /* width: 200px; */
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.subscribe {
+  border: 1px solid white;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe input {
+  width: 70%;
+  height: 30px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+
+.subscribe button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  background-color: var(--pink);
+  color: white;
+  border: none;
 }
 
 @media (max-width: 450px) {
