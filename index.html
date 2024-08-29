@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +17,7 @@
     <title>Huddle Landing Page</title>
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <nav>
         <div class="logo">
           <img
@@ -72,65 +72,64 @@
           </div>
         </div>
       </div>
-    </div>
+    </header>
 
-    <div class="services">
-      <div class="services-service">
-        <div class="services-text">
-          <h3>Grow Together</h3>
-          <p>
-            Generate meaningful discussions with your audience and build a
-            strong, loyal community. Think of the insightful conversations you
-            miss out on with a feedback form.
-          </p>
+    <main>
+      <div class="services">
+        <div class="services-service">
+          <div class="services-text">
+            <h3>Grow Together</h3>
+            <p>
+              Generate meaningful discussions with your audience and build a
+              strong, loyal community. Think of the insightful conversations you
+              miss out on with a feedback form.
+            </p>
+          </div>
+          <div class="services-image">
+            <img
+              src="./huddle-landing-page-with-curved-sections-master/images/illustration-grow-together.svg"
+              alt=""
+            />
+          </div>
         </div>
-        <div class="services-image">
-          <img
-            src="./huddle-landing-page-with-curved-sections-master/images/illustration-grow-together.svg"
-            alt=""
-          />
+        <div class="services-service">
+          <div class="services-text">
+            <h3>Flowing Conversations</h3>
+            <p>
+              You wouldn't paginate a conversation in real life, so why do it
+              online? Our threads have just-in-time loading for a more natural
+              flow.
+            </p>
+          </div>
+          <div class="services-image">
+            <img
+              src="./huddle-landing-page-with-curved-sections-master/images/illustration-flowing-conversation.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="services-service">
+          <div class="services-text">
+            <h3>Your Users</h3>
+            <p>
+              It takes no time at all to integrate Huddle with your app's
+              authentication solution. This means, once signed in to your app,
+              your users can start chatting immediately.
+            </p>
+          </div>
+          <div class="services-image">
+            <img
+              src="./huddle-landing-page-with-curved-sections-master/images/illustration-your-users.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="community">
+          <h4>Ready To Build Your Community?</h4>
+          <a class="hero-section-btn">Get Started For Free</a>
         </div>
       </div>
-
-      <div class="services-service">
-        <div class="services-text">
-          <h3>Flowing Conversations</h3>
-          <p>
-            You wouldn't paginate a conversation in real life, so why do it
-            online? Our threads have just-in-time loading for a more natural
-            flow.
-          </p>
-        </div>
-        <div class="services-image">
-          <img
-            src="./huddle-landing-page-with-curved-sections-master/images/illustration-flowing-conversation.svg"
-            alt=""
-          />
-        </div>
-      </div>
-
-      <div class="services-service">
-        <div class="services-text">
-          <h3>Your Users</h3>
-          <p>
-            It takes no time at all to integrate Huddle with your app's
-            authentication solution. This means, once signed in to your app,
-            your users can start chatting immediately.
-          </p>
-        </div>
-        <div class="services-image">
-          <img
-            src="./huddle-landing-page-with-curved-sections-master/images/illustration-your-users.svg"
-            alt=""
-          />
-        </div>
-      </div>
-
-      <div class="community">
-        <h4>Ready To Build Your Community?</h4>
-        <a class="hero-section-btn">Get Started For Free</a>
-      </div>
-    </div>
+    </main>
 
     <footer>
       <div class="footer-container">
@@ -177,7 +176,7 @@
           </p>
           <div class="subscribe">
             <input type="email" />
-            <button type="submit">Subscribe</button>
+            <button type="submit" aria-label="email">Subscribe</button>
           </div>
         </div>
       </div>
