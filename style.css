@@ -13,7 +13,7 @@
   --very-pale-blue: hsl(207, 100%, 98%);
 }
 
-header {
+.header {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -368,7 +368,7 @@ footer {
 }
 
 @media (max-width: 450px) {
-  header {
+  .header {
     padding: 1rem;
   }
 
