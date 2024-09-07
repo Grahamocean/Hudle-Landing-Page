@@ -38,7 +38,7 @@ nav {
 
 .btn {
   background-color: transparent;
-  padding: 0.8rem 2rem;
+  padding: 0.5rem 2rem;
   border: 1px solid var(--pink);
   border-radius: 20px;
   font-size: 0.8rem;
@@ -140,7 +140,7 @@ nav {
   font-weight: 500;
   color: #fff;
   background-color: var(--pink);
-  padding: 1rem 5rem;
+  padding: 0.5rem 5rem;
 }
 .hero-section-btn:hover {
   background-color: var(--Light-pink);
@@ -465,7 +465,7 @@ footer {
   }
 
   .community h4 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: center;
   }
   footer {
